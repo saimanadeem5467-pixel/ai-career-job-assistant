@@ -1,0 +1,44 @@
+.ai-card {
+  background: var(--gradient-hero);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.ai-card-avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-card-avatar-core {
+  position: relative;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--gradient-violet);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-pop);
+}
+
+/* Signature element: a slow ambient pulse ring behind the AI avatar —
+   reads as "the model is alert / thinking", used only here, kept restrained. */
+.ai-card-avatar-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent-violet);
+  opacity: 0.6;
+  animation: ai-pulse 2.6s ease-out infinite;
+}

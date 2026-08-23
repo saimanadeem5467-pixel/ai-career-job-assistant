@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Design Tokens — AI Career & Job Assistant
+   Import this once (e.g. in main.jsx / index.js) before any component CSS.
+   ========================================================================== */
+
+:root {
+  /* Surfaces */
+  --bg-app: #0a0a12;
+  --bg-surface: #12121e;
+  --bg-surface-raised: #171728;
+  --bg-surface-hover: #1c1c30;
+  --border-subtle: #232338;
+  --border-strong: #2e2e48;
+
+  /* Text */
+  --text-primary: #f2f2fa;
+  --text-secondary: #9797b3;
+  --text-muted: #64647e;
+
+  /* Accent — violet is the primary AI signal color */
+  --accent-violet: #8b5cf6;
+  --accent-violet-dim: #6d28d9;
+  --accent-violet-soft: rgba(139, 92, 246, 0.14);
+
+  --accent-blue: #3b82f6;
+  --accent-blue-soft: rgba(59, 130, 246, 0.14);
+
+  --accent-teal: #14b8a6;
+  --accent-teal-soft: rgba(20, 184, 166, 0.14);
+
+  --accent-orange: #f97316;
+  --accent-orange-soft: rgba(249, 115, 22, 0.14);
+
+  --accent-red: #f87171;
+
+  /* Gradients */
+  --gradient-violet: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  --gradient-hero: linear-gradient(135deg, #1c1533 0%, #12121e 60%);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+  --shadow-pop: 0 4px 16px -4px rgba(139, 92, 246, 0.35);
+
+  /* Type */
+  --font-display: "Outfit", "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", "Space Mono", monospace;
+
+  /* Layout */
+  --sidebar-width: 264px;
+  --topbar-height: 72px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+/* Shared numeric treatment — stats read like AI-computed data */
+.mono-stat {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
