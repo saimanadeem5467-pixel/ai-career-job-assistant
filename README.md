@@ -319,7 +319,7 @@ Add ".env" to ".gitignore".
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/saimanadeem5467-pixel/ai-career-job-assistant.git
 
 Move into the project:
 
